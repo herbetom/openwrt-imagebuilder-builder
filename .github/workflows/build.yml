@@ -12,7 +12,7 @@ jobs:
       fail-fast: false
       matrix:
         target:
-          - ath79-nand
+          - ipq40xx-generic
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
