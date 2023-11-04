@@ -3,7 +3,7 @@
 set -e
 
 OPENWRT_REPO=https://github.com/openwrt/openwrt.git
-OPENWRT_BRANCH=main
+OPENWRT_BRANCH=openwrt-23.05
 
 git clone "${OPENWRT_REPO}" -b "${OPENWRT_BRANCH}" openwrt
 
