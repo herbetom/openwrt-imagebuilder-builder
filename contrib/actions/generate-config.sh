@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 set -e
 
-./contrib/actions/seperate-target.sh "$1"
+source contrib/actions/seperate-target.sh "$1"
 
 echo "configuring OpenWrt for ${OPENWRT_TARGET}"
 
