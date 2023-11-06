@@ -2,7 +2,7 @@
 
 set -e
 
-source seperate-target.sh "$1"
+./seperate-target.sh "$1"
 
 echo "configuring OpenWrt for ${OPENWRT_TARGET}"
 
