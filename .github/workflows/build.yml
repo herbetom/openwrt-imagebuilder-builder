@@ -23,8 +23,11 @@ jobs:
       - name: Checkout OpenWrt
         run: contrib/actions/prepare-openwrt.sh
 
+      - name: generate config
+        run: contrib/actions/generate-config.sh ${{ matrix.target }}
+
       - name: Build
-        run: contrib/actions/run-build.sh ${{ matrix.target }}
+        run: contrib/actions/run-build.sh
 
       - name: tree openwrt
         run: tree openwrt
